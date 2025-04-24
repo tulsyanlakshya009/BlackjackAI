@@ -20,8 +20,6 @@ This repository contains a complete implementation of a Blackjack AI using tabul
   - [Bet-Sizing Heuristic](#bet-sizing-heuristic)
   - [Baseline Agent](#baseline-agent)
 - [Results](#results)
-- [Future Work](#future-work)
-- [License](#license)
 
 ---
 
@@ -53,14 +51,14 @@ This repository contains a complete implementation of a Blackjack AI using tabul
 ## 🔧 Requirements
 
 - Python 3.8+
-- Packages listed in `requirements.txt`:
+- Packages:
   - `numpy`
   - `pillow`
-  - `reportlab` (for PDF generation, optional)
+  - `reportlab`
 
 Install via:
 ```bash
-pip install -r requirements.txt
+pip install numpy pillow reportlab
 ```
 
 ---
@@ -68,35 +66,20 @@ pip install -r requirements.txt
 ## 🚀 Installation
 
 1. Clone this repository:
-   ```bash
-git clone https://github.com/your-username/blackjack-ai.git
-cd blackjack-ai
-```
-2. Install dependencies:
-   ```bash
-pip install -r requirements.txt
+```bash
+git clone https://github.com/tulsyanlakshya009/BlackjackAI.git
+cd BlackjackAI
 ```
 
 ---
 
 ## 🏃 Usage
 
-### Training the AI
+### Training & Testing the AI
 
-Run the training script to train over 500,000 hands:
+AI is trained over 500,000 hands and tested on 100,000 hands:
 ```bash
-python train_blackjack_ai.py --train --episodes 500000 --save_model
-```
-- **Options**:
-  - `--train`: enable training mode
-  - `--episodes N`: number of simulated hands
-  - `--save_model`: saves Q-table to `blackjack_q_table.pkl`
-
-### Testing the AI
-
-After training (or loading a saved model), evaluate over 100,000 hands:
-```bash
-python train_blackjack_ai.py --test --episodes 100000 --load_model blackjack_q_table.pkl
+python train_blackjack_ai.py
 ```
 
 ### Running the GUI
@@ -122,9 +105,9 @@ python blackjackgui.py
 ### Q-Learning Agent
 
 - Tabular Q-learning with update:
-  \(Q(s,a) ← Q(s,a) + α [r + γ max_{a'} Q(s',a') – Q(s,a)]\)
+  \(Q(s,a) <- Q(s,a) + α [r + γ max_{a'} Q(s',a') – Q(s,a)]\)
 - α = 0.05, γ = 0.95
-- ε-greedy exploration: ε decays from 1.0 → 0.05
+- ε-greedy exploration: ε decays from 1.0 -> 0.05
 
 ### Bet-Sizing Heuristic
 
@@ -137,10 +120,20 @@ python blackjackgui.py
 ### Baseline Agent
 
 - Fixed bet = 10
-- Hit if `player_total ≤ 16`, stand if ≥ 17
+- Hit if `player_total <= 16`, stand if >= 17
 
 ---
 
 ## 📊 Results
+
+---------------------------------------------------------------------------
+| Metric                    | AI Model             | Baseline             | 
+---------------------------------------------------------------------------
+| Total Profit              |            1,265,025 |              159,870 | 
+| Avg Profit/Hand           |                12.65 |                 1.60 | 
+| Win Rate                  |               42.13% |               42.74% | 
+| Draw Rate                 |                8.59% |                9.14% | 
+| Loss Rate                 |               49.28% |               48.12% | 
+---------------------------------------------------------------------------
 
 
