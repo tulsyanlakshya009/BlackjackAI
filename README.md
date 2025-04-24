@@ -109,11 +109,14 @@ python blackjackgui.py
 
 ### Bet-Sizing Heuristic
 
-1. Compute `low`, `mid`, `high` probabilities from deck
-2. Raw advantage: `adv_raw = high – low`
-3. Damped: `adv_adj = adv_raw × (1 – mid)` to account for neutral 7–9’s
-4. Normalize to [0,1], then linearly scale to [10,100]
-5. Round to nearest multiple of 10
+Choose a bet based on the remaining card probabilities:
+
+1. Bet 100 if high > 0.37
+2. Bet 80 if high > 0.3
+3. Bet 60 if mid > 0.4
+4. Bet 40 if low > 0.4
+5. Else, pick random: 10–70
+
 
 ### Baseline Agent
 
