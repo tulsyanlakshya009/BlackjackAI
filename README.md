@@ -128,7 +128,7 @@ python blackjackgui.py
 
 | Metric           | AI Model     | Baseline    |
 |------------------|--------------|-------------|
-| Total Profit     | ₹1,265,025   | ₹159,870    |
+| Total Profit     | 1,265,025    | 159,870     |
 | Avg Profit/Hand  | 12.65        | 1.60        |
 | Win Rate         | 42.13%       | 42.74%      |
 | Draw Rate        | 8.59%        | 9.14%       |
