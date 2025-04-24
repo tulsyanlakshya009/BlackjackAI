@@ -6,19 +6,19 @@ This repository contains a complete implementation of a Blackjack AI using tabul
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Training & Testing the AI](#training-&-testing-the-ai)
+- [✨ Features](#-features)
+- [🗂 Repository Structure](#-repository-structure)
+- [🔧 Requirements](#-requirements)
+- [🚀 Installation](#-installation)
+- [🏃 Usage](#-usage)
+  - [Training & Testing the AI](#training--testing-the-ai)
   - [Running the GUI](#running-the-gui)
-- [Algorithms](#algorithms)
+- [🧠 Algorithms](#-algorithms)
   - [MDP Formulation](#mdp-formulation)
   - [Q-Learning Agent](#q-learning-agent)
   - [Bet-Sizing Heuristic](#bet-sizing-heuristic)
   - [Baseline Agent](#baseline-agent)
-- [Results](#results)
+- [📊 Results](#-results)
 
 ---
 
