@@ -103,9 +103,7 @@ python blackjackgui.py
 ### Q-Learning Agent
 
 - Tabular Q-learning with update:
-\[
-Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
-\]
+$ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]$
 - α = 0.05, γ = 0.95
 - ε-greedy exploration: ε decays from 1.0 -> 0.05
 
