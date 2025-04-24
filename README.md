@@ -52,11 +52,10 @@ This repository contains a complete implementation of a Blackjack AI using tabul
 - Packages:
   - `numpy`
   - `pillow`
-  - `reportlab`
 
 Install via:
 ```bash
-pip install numpy pillow reportlab
+pip install numpy pillow
 ```
 
 ---
