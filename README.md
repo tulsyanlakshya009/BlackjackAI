@@ -41,7 +41,6 @@ This repository contains a complete implementation of a Blackjack AI using tabul
 ├── blackjack_baseline.py # Rule-based baseline agent
 ├── train_blackjack_ai.py # Training & testing harness (persistent deck)
 ├── blackjackgui.py       # Tkinter GUI with AI integration
-├── requirements.txt      # Python dependencies
 └── README.md             # Project overview and usage
 ```
 
